@@ -27,18 +27,3 @@ function json_btn_clicked() {
   };
   json_request.send();
 }
-
-/////////XML
-document
-  .getElementById("show_xml_btn")
-  .addEventListener("click", xml_btn_clicked);
-
-function xml_btn_clicked() {
-  log_timestamp();
-  let xml_request = new XMLHttpRequest();
-  xml_request.open("GET", data_address_2);
-  xml_request.onload = function() {
-    alert();
-  };
-  xml_request.send();
-}
